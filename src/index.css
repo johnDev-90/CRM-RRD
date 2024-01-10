@@ -1,0 +1,301 @@
+html {
+ 
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+
+
+}
+
+.title{
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 2rem;
+}
+
+.link{
+
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 1rem 2rem;
+  line-height: normal;
+
+}
+
+.link:hover{
+  background-color: rgb(55 65 81);
+  
+}
+
+.link-Selected{
+  color: rgb(129 140 248);
+}
+
+
+
+.container-aside{
+  background-color: rgb(31 41 55);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  
+ 
+}
+
+.link-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.grid-layout{
+  display: flex;
+  flex-direction: column;
+}
+
+@media(min-width:768px){
+  .grid-layout{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    min-height: 100vh;
+  }
+
+  .container-aside{
+    background-color: rgb(31 41 55);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    
+   
+  }
+
+  .link-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+.main-container{
+  background-color: rgb(243 244 246);
+  grid-column: 2/7;
+  text-align: center;
+  min-height: 100vh;
+  overflow-y: scroll;
+  padding: 4rem 5rem;
+}
+
+.main-title{
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: left;
+  color: rgb(75 85 99);
+  
+}
+
+.main-title-p{
+  margin-top: 5rem;
+  line-height:normal;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgb(75 85 99);
+}
+
+table{
+ display: none;
+  color: white;
+  margin-top: 5rem;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  
+}
+
+thead{
+  background-color: rgb(55 65 81);
+  width: 100%;
+
+}
+
+tbody {
+  background-color: white;
+  color: black;
+}
+
+
+
+.btns{
+
+display: flex;
+justify-content: center;
+margin-top: 3rem;
+
+  
+
+}
+
+.responsiveTable-content{
+  display: none;
+ 
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  background-color: white;
+  
+  padding: 2rem 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+}
+
+
+@media(min-width:768px){
+  .btns{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+ 
+
+  table{
+   display:table ;
+    color: white;
+    margin-top: 5rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    
+  }
+}
+
+.editBtn{
+  margin-right: 2rem;
+  color:blue;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background-color: white;
+  cursor: pointer;
+}
+
+.deleteBtn{
+  cursor: pointer;
+  color:red;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  background-color: white;
+  font-size: 13px;
+
+}
+
+.td-tbody{
+  padding: 1rem 3rem;
+  text-align: left;
+}
+
+.fontBold{
+  font-weight: bold;
+}
+
+.fontNormal{
+  font-weight: normal;
+}
+
+.form{
+  margin: 0 auto;
+  width: 80%;
+  background-color: white;
+  margin-top: 5rem;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  margin-top: 3rem;
+}
+
+
+.input-container{
+  font-size: 1.5rem;
+  font-weight:  bold;
+  padding: 1rem 3rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+
+}
+
+input{
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  background-color: rgb(243 244 246);
+  border-radius: 5px;
+  color:rgb(156 163 175);
+  border: none;
+  outline: none;
+  
+  
+}
+
+textarea{
+  
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  height: 10rem;
+  background-color: rgb(243 244 246);
+  border-radius: 5px;
+  color:rgb(156 163 175);
+  border: none;
+  outline: none;
+
+}
+
+.register-btn{
+  font-size: 1.5rem;
+  background-color: #5564eb;
+  color: white;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+.register-btn:hover{
+  background-color:#3040d0 ;
+  cursor: pointer;
+}
+
+.errorMessage{
+  font-weight: bold;
+  background-color: red;
+  padding: 5px 0;
+  margin: 0 auto;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  width: 84%;
+  margin-top: 2rem;
+  
+  
+}
+
+
+

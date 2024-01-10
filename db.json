@@ -1,0 +1,20 @@
+{
+  "customers": [
+    {
+      "name": "John Martinez",
+      "company": "ACA International (USA) INC. ",
+      "email": "John.martinez200215@gmail.com",
+      "telephone": "+50372244093",
+      "notes": "I need a website",
+      "id": 1
+    },
+    {
+      "name": "Gabriela Montiel",
+      "company": "Aire",
+      "email": "John.martinez200215@gmail.com",
+      "telephone": "+50372244093",
+      "notes": "Please call me",
+      "id": 2
+    }
+  ]
+}
